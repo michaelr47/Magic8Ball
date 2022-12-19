@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylsheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Magic 8 Ball</title>
-</head>
-<body>
-    <h1>Magic 8 Ball!</h1>
-<script src="js/script.js"></script>
-</body>
+  </head>
+  <body>
+    <div class="loading-indicator">
+        <h1>Loading image...</h1>
+    </div>
+    <div class="cont">
+      <h1 id="header-text">Magic 8 Ball!</h1>
+      <div class="inner-cont">
+        <label for="ask" id="label">Ask Me Anything!</label>
+        <input type="text" id="ask" name="ask"/>
+        <span id="user-answer"></span>
+        <button id="askBtn" onclick="handleBtn()">ASK!</button>
+      </div>
+    </div>
+    <div class="apiContainter">
+      <div id="answers">
+        <img id="api-img" src="" alt="" />
+      </div>
+    </div>
+    <script src="js/script.js" defer></script>
+  </body>
 </html>
